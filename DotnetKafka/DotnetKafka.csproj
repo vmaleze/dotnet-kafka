@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <Authors>Maleze, Vivien</Authors>
+    <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+    <Description>Sample Kafka service</Description>
+    <NoWarn>S101;S1075;S1135;S1450;S4457;NU1605;NU5105;NU1603;S3881</NoWarn>
+    <ProjectGuid>708496c0-6d5f-4097-80d2-0319b1cf7335</ProjectGuid>
+    <PackageId>DotnetKafka</PackageId>
+    <PackageTags>kafka, dotnet core, api, docker</PackageTags>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+    <StartupObject>DotnetKafka.Program</StartupObject>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    
+    <PackageReference Include="AspNetCore.HealthChecks.Kafka" Version="2.2.3" />
+    
+    <PackageReference Include="Confluent.Kafka" Version="1.3.0" />
+
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+  </ItemGroup>
+
+</Project>
